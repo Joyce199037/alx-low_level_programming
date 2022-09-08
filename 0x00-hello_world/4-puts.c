@@ -1,10 +1,11 @@
-/**
- * main -entry point
- * Return: 0 after printing the function
- */
 #include <stdio.h>
+/**
+ * main - main block 
+ *
+ * return: 0 
+ */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	   retutn (0);
+	puts("\"Programming is like biulding a multilingual puzzle");
+	return (0);
 }
