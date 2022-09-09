@@ -1,46 +1,48 @@
-#include <stdio.h>
+[0:22 am, 10/09/2022] Ola-Domain🔥🔥🔥 Alx: #include <stdio.h>
+#include <unistd.h>
+/**
+ * main - Entry point
+ * Description: Print base 16 numbers
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+	char c;
+	char d = '0';
+
+	while (d <= '9')
+	{
+		putchar(d);
+		d++;
+	}
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
+}
+[0:22 am, 10/09/2022] Ola-Domain🔥🔥🔥 Alx: #include <stdio.h>
 #include <stdlib.h>
 /**
  * main - main block
- * Description: Write a program that prints all possible
- * different combinations of two digits
- * Numbers must be separated by ,, followed by a space
- * The two digits must be different
- * 01 and 10 are considered the same combination of the two digits 0 and 1
- * Print only the smallest combination of two digits
- * Numbers should be printed in ascending order, with two digits
- * You can only use the putchar function
- * (every other function (printf, puts, etc…) is forbidden)
- * You can only use putchar five times maximum in your code
- * You are not allowed to use any variable of type char
- * All your code should be in the main function
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
  * Return: 0
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int c = 0;
 
-	while (d < 10)
+	while (c < 10)
 	{
-		c = 0;
-		while (c < 10)
+		putchar(48 + c);
+		if (c != 9)
 		{
-			if (d != c && d < c)
-			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-
-			c++;
+			putchar(',');
+			putchar(' ');
 		}
-		d++;
+		c++;
 	}
 	putchar('\n');
 	return (0);
