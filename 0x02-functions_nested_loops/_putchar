@@ -1,6 +1,3 @@
-cat>_putchar
-
-
 #include <unistd.h>
 
 /**
@@ -13,4 +10,3 @@ cat>_putchar
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
-}
