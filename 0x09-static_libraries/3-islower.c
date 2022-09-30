@@ -1,20 +1,14 @@
-/*
- * File: 0-positive_or_negative.c
- * Auth: Keenmuhammd
- */
 #include "main.h"
+
 /**
- * _islower -This program check
- *		if a character is a lowercase
- *		letter from the English alphabet
- * @c: input parameter
- * Return: 1 for lowercase, 0 if it's not lowercase
+ * _islower - prints 1 or 0 depending on input
+ * @c: first parameter
+ *
+ * Description: prints all lowercase letters
+ * Return: Always(0).
  */
+
 int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
-
+	return (c >= 'a' && c <= 'z');
 }

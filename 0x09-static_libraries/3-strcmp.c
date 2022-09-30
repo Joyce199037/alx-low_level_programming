@@ -1,18 +1,30 @@
 #include "main.h"
 
 /**
- *  _strcmp - compares if 2 strings
- *  @s1: destination string
- *  @s2: source string to be copied
- *  Return: difference of first characters that are of diff value
+ * _strcmp - compare strings
+ * @s1: first input char
+ * @s2: second input char
+ *
+ * Description: the function compares two strings
+ * Return: character count
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int j;
+	int i, diff;
 
-	for (j = 0; s1[j] != '\0' && s2[j] != '\0'; j++)
-		if (s1[j] != s2[j])
-			return (s1[j] - s2[j]);
+	for (i = 0; s1[i] != '\0'; ++i)
+	{
+		if (s1[i] > s2[i])
+		{
+			diff = s1[i] - s2[i];
+			return (diff);
+		}
+		else if (s1[i] < s2[i])
+		{
+			diff = s1[i] - s2[i];
+			return (diff);
+		}
+	}
 	return (0);
 }
